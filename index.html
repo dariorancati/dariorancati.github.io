@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- EDIT ME: browser-tab title + the description shown under your name in Google -->
+<title>Dario Rancati</title>
+<meta name="description" content="Dario Rancati — PhD student at ISTA working on the thermodynamics of causation, optimal transport, and machine learning." />
+
+<style>
+  :root {
+    --paper: #fdfcfa;
+    --ink:   #1a1a17;
+    --muted: #666;
+    --link:  #2a4d75;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+  a:hover { text-decoration: none; }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 2.4rem 0 0.9rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #e7e3da;
+  }
+
+  p { margin: 0 0 1rem; }
+
+  /* small headshot, floats beside the intro on wide screens */
+  .photo {
+    float: right;
+    width: 168px;
+    height: auto;
+    margin: 4px 0 16px 24px;
+    border-radius: 3px;
+  }
+
+  .links { margin: 0.2rem 0 0; }
+  .links a { margin-right: 14px; white-space: nowrap; }
+
+  .theme { margin-bottom: 1.2rem; }
+  .theme:last-child { margin-bottom: 0; }
+
+  /* publication list */
+  .pubs { list-style: none; margin: 0; padding: 0; }
+  .pubs li { margin-bottom: 1.1rem; }
+  .pubs .title { font-style: italic; }
+  .pubs .meta { display: block; color: var(--muted); }
+  .pubs .meta .me { color: var(--ink); font-weight: 700; }
+  .pubs .meta a { margin-left: 4px; }
+
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; }
+
+  @media (max-width: 560px) {
+    body { font-size: 17px; }
+    .wrap { padding: 40px 20px 60px; }
+    .photo { float: none; display: block; margin: 0 0 20px; }
+  }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <h1>Dario Rancati</h1>
+
+  <!-- Drop a headshot named photo.jpg next to this file, or delete this line. -->
+  <img class="photo" src="photo.jpg" alt="Dario Rancati" onerror="this.style.display='none'" />
+
+  <!-- ===== INTRO — advisors & group linked inline ===== -->
+  <p>
+    Hi! I'm Dario Rancati &mdash; most people call me Radio. I'm a PhD student at the
+    <a href="https://ista.ac.at/en/home/">Institute of Science and Technology Austria (ISTA)</a>,
+    in the <a href="https://causallearningai.github.io">Causal Learning and AI group</a>
+    led by <a href="https://www.francescolocatello.com/">Francesco Locatello</a>, and co-supervised by
+    <a href="https://www.uva.nl/en/profile/w/e/m.welling/m.welling.html">Max Welling</a>
+    at the University of Amsterdam. I work at the intersection of stochastic thermodynamics,
+    causal inference, optimal transport, and machine learning.
+  </p>
+
+  <!-- ===== PAST — I don't have your pre-ISTA history, so fill these in ===== -->
+  <p>
+    Before joining ISTA, I [studied / completed my MSc / BSc] at [institution] ([years]),
+    where I worked on [topic or focus]. [Optional earlier line &mdash; e.g. an internship,
+    a research visit, or your undergrad if not mentioned above.]
+  </p>
+
+  <!-- ===== ONE-LINE RESEARCH THESIS ===== -->
+  <p>
+    The through-line of my work is a physical theory of causation: I use the tools of
+    nonequilibrium thermodynamics to give causal structure an operational, dynamical meaning.
+  </p>
+
+  <p><strong>Email:</strong> [your.email@ista.ac.at]</p>
+
+  <!-- Delete any link you don't have; add ORCID, Bluesky, dblp, etc. as needed. -->
+  <p class="links">
+    <a href="[Google Scholar URL]">Google Scholar</a>
+    <a href="[GitHub URL]">GitHub</a>
+    <a href="[link to your CV.pdf]">CV</a>
+    <a href="[arXiv author URL]">arXiv</a>
+  </p>
+
+  <!-- ===== RESEARCH ===== -->
+  <h2>Research</h2>
+
+  <div class="theme">
+    <p><strong>Hamiltonian Causal Models.</strong>
+    My main line of work develops Hamiltonian Causal Models (HCMs), a framework in which
+    causal influence leaves a thermodynamic signature. The central idea is that entropy
+    production along a system's trajectories witnesses causal effect: pure gradient dynamics
+    are observationally symmetric, and interventions break that symmetry in a way that
+    identifies causal parents. This yields clean connections between thermodynamic quantities
+    and classical notions like Granger causality and transfer entropy.</p>
+  </div>
+
+  <div class="theme">
+    <p><strong>Optimal transport, diffusion &amp; geometry.</strong>
+    Alongside this, I study the geometry of generative models and of dynamics on
+    distributions &mdash; for instance, discrete diffusion on graphs recast as a free-energy
+    gradient flow, and the thermodynamic geometry underlying diffusion-model behaviour.
+    Optimal transport and information geometry are the recurring language throughout.</p>
+  </div>
+
+  <!-- ===== PUBLICATIONS — newest first. Copy an <li> to add more.
+       Wrap your own name in <span class="me">…</span>. ===== -->
+  <h2>Publications</h2>
+  <ul class="pubs">
+    <li>
+      <span class="title">Learning Discrete Diffusion on Graphs via Free-Energy Gradient Flows</span>
+      <span class="meta">
+        <span class="me">Dario Rancati</span>, Jan Maas, Francesco Locatello. ICML 2026.
+        <a href="[arXiv URL]">arXiv</a>
+        <a href="[code URL]">Code</a>
+      </span>
+    </li>
+    <li>
+      <span class="title">[Hamiltonian Causal Models — confirm exact title]</span>
+      <span class="meta">
+        <span class="me">Dario Rancati</span>, [coauthors]. [Under review / venue, 2026].
+        <a href="[arXiv URL]">arXiv</a>
+      </span>
+    </li>
+  </ul>
+
+  <footer>
+    &copy; <span id="year"></span> Dario Rancati.
+  </footer>
+
+</div>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
